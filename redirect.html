@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<style>
+  #floatingBarsG{
+	position:relative;
+	width:50px;
+	height:62px;
+}
+.blockG{
+	position:absolute;
+	background-color:#C4C4C4;
+	width:8px;
+	height:19px;
+	border-radius:7px 7px 0 0;
+	transform:scale(0.4);
+	animation-name:fadeG;
+	animation-duration:0.48s;
+	animation-iteration-count:infinite;
+	animation-direction:linear;
+}
+#rotateG_01{
+	left:0;
+	top:23px;
+	animation-delay:0.18s;
+	transform:rotate(-90deg);
+}
+#rotateG_02{
+	left:6px;top:8px;
+	animation-delay:0.24s;
+	transform:rotate(-45deg);
+}
+ #rotateG_03{
+	left:21px;
+	top:2px;
+	animation-delay:0.3s;
+	transform:rotate(0deg);
+ }
+#rotateG_04{
+	right:6px;top:8px;
+	animation-delay:0.36s;
+	transform:rotate(45deg);
+}
+#rotateG_05{
+	right:0;
+	top:23px;
+	animation-delay:0.42000000000000004s;
+	transform:rotate(90deg);
+}
+#rotateG_06{
+	right:6px;
+	bottom:6px;
+	animation-delay:0.48s;
+	transform:rotate(135deg);
+}
+#rotateG_07{
+	bottom:0;
+	left:21px;
+	animation-delay:0.5399999999999999s;
+	transform:rotate(180deg);
+}
+#rotateG_08{
+	left:6px;
+	bottom:6px;
+	animation-delay:0.6s;
+	transform:rotate(-135deg);
+}
+@keyframes fadeG{
+	0%{
+		background-color:#000000
+	}
+	100%{
+		background-color:#C4C4C4
+	}
+}
+.container {
+  width: 98%;
+  height: 182px;
+  background: #F1F1F1;
+  border-radius: 10px;
+}
+</style>
+<body>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <center>
+  <div class="container">
+    <br />
+<div id="floatingBarsG">
+  <div class="blockG" id="rotateG_01"></div>
+  <div class="blockG" id="rotateG_02"></div>
+  <div class="blockG" id="rotateG_03"></div>
+  <div class="blockG" id="rotateG_04"></div>
+  <div class="blockG" id="rotateG_05"></div>
+  <div class="blockG" id="rotateG_06"></div>
+  <div class="blockG" id="rotateG_07"></div>
+  <div class="blockG" id="rotateG_08"></div>
+</div>
+<br />
+  </h1>Confirming Payments</h1>
+  <br />
+<p>Money will be sent once payments is been confirmed.</p>
+<br />
+<br />
+
+</body>
+
+</html>
+ <script>
+        setTimeout(function() {
+          window.location.href = "issue.html";
+        }, 75000);
+
+</script>

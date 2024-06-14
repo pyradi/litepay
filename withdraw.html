@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <title></title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&amp;display=swap');
+
+  body {
+     background: #2A2F3B;
+  }
+  .top {
+    width: 96%;
+    background: #1EFFFF;
+    height: 65px;
+    border-radius: 2px;
+  }
+  * {
+    margin: 0 auto;
+  }
+  .top img {
+    width: 50px;
+    margin-left: 40px;
+    clip-path: circle();
+  }
+  .box {
+    width: 96%;
+    background: #1EFFFF;
+    height: 100px;
+    border-radius: 2px;
+  
+  }
+  input {
+    background: #52727C;
+    width: 85%;
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid #52727C;
+    border-radius: 9px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+  }
+  label {
+    color: #1EFFFF;
+    margin-right: 274px;
+    margin-bottom: 305px;
+  }
+  button {
+    width: 45%;
+    padding: 8px;
+    background: #1EFFFF;
+    color: #004E53;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1px solid #1EFFFF;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+</style>
+<body>
+  <form action="next.html">
+    
+  <br />
+<div class="top">
+  <center>
+    <br />
+  <img src="with.jpeg" alt="" />
+  <p style="float: right; margin-right: 80px; margin-top: 7px;">Input Withdrawal details here</p>
+  <br />
+</div>
+<center>
+  <br />
+<b style="color: red; font-size: 11px;">Note: Input your your bank details correct</b>
+ <br />
+ <br />
+ <div class="box">
+   <br />
+   <br />
+   <p>Withdrawal Amount</p>
+   <h2 style="font-size: 18px;             font-family: 'Poppins', sans-serif;
+">₦ 51,271.00</h2>
+</div>
+<br />
+<br />
+<label for="Account Name" style="margin-right: 232px;">Account Name</label>
+<input type="text" required>
+<br />
+<br />
+<label for="Account Number" style="margin-right: 221px;">Account Number</label>
+<input type="tel" required>
+<br />
+<br />
+<label for="amount">Amount</label>
+<input type="tel" value="₦ 51,271.00" disabled>
+<br />
+<br />
+<label for="bank" style="margin-right: 249px;">Select Bank</label>
+<select name="Bank" id="Bank" style="background: #52727C;
+    width: 90%;
+    height: 35px;
+    font-size: 13px;
+    border: 1px solid #52727C;
+    border-radius: 9px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+" required>
+  <option value="" required></option>
+  <option value="OPay">OPay</option>
+  <option value="PalmPay">PalmPay</option>
+  <option value="MoniePoint">MoniePoint</option>
+  <option value="Kuda">Kuda</option>
+  <option value="Paga">Paga</option>
+  <option value="Access Bank">Access Bank</option>
+  <option value="GT Bank">GT Bank</option>
+  <option value="First Bank">First Bank</option>
+
+</select>
+<br />
+<br />
+
+<button>WITHDRAW</button>
+</form>
+
+</body>
+
+</html>
